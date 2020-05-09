@@ -7,10 +7,12 @@
     <script src="JS/pet_foods_script.js"></script>
 </head>
 <body onload="move_logo">
+<!--This is the header that holds the logo and logo animation-->
 <div id="header">
 
-    <img src="IMG/Pet%20Food.png" height="260" width="325" id="logo"/>
+    <img id="logo" src="IMG/Pet%20Food.png" height="260" width="325" id="logo"/>
 </div>
+<!--Navigation bar-->
 <div id="nav">
 
     <a href="index.html">Home</a>
@@ -27,6 +29,7 @@
             <td id="middle_content">
     <h2>Welcome to Pet Foods Online Store!</h2>
             <h2 id="index_product_heading">Popular purchases</h2>
+<!--                Below are all the products and prices-->
             <div class="product">
                 <img src="IMG/dogfood.png"/>
                 <p>$6.50</p>
@@ -46,14 +49,17 @@
                 <p><button class="add_button" id="add_toys" onclick="add_to_cart(this)">Buy</button> </p>
             </div>
             </td>
+<!--            Add to cart section of the page-->
             <td id="right_content">
                 <p>Cart</p>
                 <div id="cart_div"></div>
+                <p></p>
                 <button id="show_invoice_button">Invoice</button>
             </td>
         </tr>
     </table>
 </div>
+<!--Footer that contains contact information of Pet Foods-->
 <div id="footer">
     <hr>
     <p>Phone: 0800-333-444 Email:<a href="#">PetFood@PetFoodStore.co.nz</a></p>

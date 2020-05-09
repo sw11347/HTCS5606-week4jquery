@@ -9,8 +9,16 @@ body{
     padding: 10px;
     text-align: center;
 }
-
-
+img{
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+}
+#logo {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+}
 #header img{
     position: center;
 }
@@ -92,4 +100,21 @@ input{
 .about_us
 {
     font-family: Bahnschrift;
+}
+#main div{
+    display: inline-block;
+}
+#logo{
+    position: relative;
+    animation-name: move_Logo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes move_Logo {
+    from{ left: 100px}
+    to{ left: 400px}
+}
+#right_content{
+    padding-left: 500px;
+    position: fixed;
 }

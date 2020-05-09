@@ -6,7 +6,7 @@ function add_to_cart(e) {
             cart
                 .insertAdjacentHTML(
                     'beforeend',
-                    '<p>Dog Food:<input type="number" class="cart_input" id = "cart_dog" pName = "dog_Food" price="6.50" value="'
+                    '<p>Dog Food:<input type="number" class="cart_input" id = "cart_dog_food" pName = "dog_Food" price="6.50" value="'
                     + qty
                     + '"> Price:$'
                     + (Number(qty) * 6.5)
@@ -32,6 +32,39 @@ function add_to_cart(e) {
                     + qty
                     + '"> Price:$'
                     + (Number(qty) * 14.99)
+                    + '</p>');
+            break;
+        case "add_dog_meat":
+            qty = document.getElementById("dog_meat_quantity").value;
+            cart
+                .insertAdjacentHTML(
+                    'beforeend',
+                    '<p>Dog Meat:<input type="number" class="cart_input" id = "cart_dog_meat" pName = "dog_meat" price="14.99" value="'
+                    + qty
+                    + '"> Price:$'
+                    + (Number(qty) * 10.00)
+                    + '</p>');
+            break;
+        case "add_cat_food":
+            qty = document.getElementById("cat_food_quantity").value;
+            cart
+                .insertAdjacentHTML(
+                    'beforeend',
+                    '<p>Cat Food:<input type="number" class="cart_input" id = "cart_cat_food" pName = "cat_food" price="6.50" value="'
+                    + qty
+                    + '"> Price:$'
+                    + (Number(qty) * 6.50)
+                    + '</p>');
+            break;
+        case "add_cat_meat":
+            qty = document.getElementById("cat_meat_quantity").value;
+            cart
+                .insertAdjacentHTML(
+                    'beforeend',
+                    '<p>Cat Meat:<input type="number" class="cart_input" id = "cart_cat_meat" pName = "cat_meat" price="10.00" value="'
+                    + qty
+                    + '"> Price:$'
+                    + (Number(qty) * 10.00)
                     + '</p>');
             break;
         // code block

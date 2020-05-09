@@ -97,6 +97,9 @@ input{
     margin: auto;
 
 }
+#middle_content{
+    width: 70%;
+}
 .about_us
 {
     font-family: Bahnschrift;

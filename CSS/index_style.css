@@ -98,7 +98,7 @@ input{
 
 }
 #middle_content{
-    width: 70%;
+    width: 80%;
 }
 .about_us
 {
@@ -118,6 +118,6 @@ input{
     to{ left: 400px}
 }
 #right_content{
-    padding-left: 500px;
     position: fixed;
+    padding-left: 50px;
 }
